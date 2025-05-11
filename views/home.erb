@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Motocross Landing Page</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="js/functions.js" type="text/javascript"></script>
+</head>
+<body>
+  <section id="wrapper">
+    <section id="bg">
+      <img src="/img/dirt-bike-2086085_1280.jpg" rel="stylesheet" type="text/css">
+    </section>
+    <section class="content-box">
+      <h1 id="logo">
+        <a href="/" class="notext">Motocross</a>
+      </h1>
+      <section class="blackbox">
+        <h2>Get news on the Motocross sport</h2>
+        <p>Please enter your email address to get this free report</p>
+        <form action="/send" method="post" name="form-blackbox" id="form-blackbox">
+          <input type="text" class="field" placeholder="Enter a valid email here" required id="email-input">
+          <input type="submit" class="submit" value="Download the report">
+        </form>
+        <p>Your information will *never* be shared or sold to a 3rd party.</p>
+      </section>
+      <footer class="footer">
+        <p>
+          <span>Created By </span>
+          <a href="http://www.efrj.com.br">EFRJ</a>
+        </p>
+      </footer>
+    </section>
+  </section>
+
+  <div id="modal-backdrop" class="modal-backdrop"></div>
+  <div id="email-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <p id="modal-message"></p>
+    </div>
+  </div>
+
+</body>
+</html>
