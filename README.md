@@ -1,12 +1,32 @@
 # Ruby Landing Page Sample
-Landing page developed in Ruby with micro framework Camping.
+
+Landing page developed in Ruby with Sinatra framework.
+
+## Prerequisites
+
+- Ruby 3.3.6 (managed via ASDF)
+- Bundler
+
+## Setup
+
+### Install Ruby with ASDF
+
+```bash
+asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
+asdf install ruby 3.3.6
+asdf set ruby 3.3.6
+```
+
+### Install Dependencies
+
+```bash
+bundle install
+```
 
 ## Run Application
-### Install Camping Framework 
-gem install camping 
 
-#### Execute the command in terminal console 
-ruby app.rb -h your-host-ip
+```bash
+ruby app.rb
+```
 
-#### Example: 
-ruby app.rb -h 192.168.1.15
+The application will start on http://localhost:4567
